@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            color: black;
+        }
+        
+        .container {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        img {
+            width: 250px;
+            height: auto;
+        }
+        
+        button {
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 25px;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        .dark__mood {
+            background-color: black;
+            color: white;
+        }
+        
+        @media screen and (max-width: 251px) {
+            .container {
+                width: 100%;
+                margin-top: 0px;
+            }
+            img {
+                width: 100%;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-1/278181857_534720351592444_874579498925768005_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=i0XFQ3UKMaUAX-xT6bu&_nc_ht=scontent.fhan14-1.fna&oh=00_AT8ju9fR-D_-RYkl4WoBtVRHR1ztth13M9LA8_Oua_LKxA&oe=62C76D83"
+            alt="">
+        <br>
+        <button onclick="myFunction()">Dark/Light Mood</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            var element = document.querySelector("body");
+            element.classList.toggle("dark__mood");
+        }
+    </script>
+</body>
+
+</html>
